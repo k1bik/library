@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><b>Books</b></h1>
+<h2><%= link_to "New book", new_book_path %></h2>
+
+ <table>
+  <tr>
+    <th>Name</th>
+    <th>Production year</th>
+    <th>Author</th>
+    <th>Genre</th>
+    <th>Shelf number</th>
+  </tr>
+
+  <div id="books">
+    <% @books.each do |book| %>
+      <%= render book %>
+    <% end %>
+  </div>
+</table> 
+
+

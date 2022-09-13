@@ -1,0 +1,8 @@
+<div id="<%= dom_id author %>">
+  <p>
+    <strong>Name:</strong>
+    <%= link_to "#{author.name}", author_path(author) %> |
+    <strong>Age:</strong>
+    <%= author.age %>
+  </p>
+</div>

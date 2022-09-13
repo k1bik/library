@@ -1,0 +1,9 @@
+<div id="<%= dom_id book %>">
+  <tr>
+    <td><%= link_to "#{book.title}", book_path(book) %></td>
+    <td><%= book.production_year %></td>
+    <td><%= link_to "#{getAuthor(book.author_id).name}", author_path(getAuthor(book.author_id)) %></td>
+    <td><%= getGenre(book.genre_id).title %></td>
+    <td><%= getShelf(book.shelf_id)&.number %></td>
+  </tr>
+</div>
